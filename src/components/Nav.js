@@ -18,7 +18,7 @@ export default function Nav() {
   const logout = () => {
 
     
-    axios.get('http://localhost:8080/user/logout', 
+    axios.get('http://api-pollvote.herokuapp.com/user/logout', 
     {
       withCredentials: true, 
   

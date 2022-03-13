@@ -11,7 +11,7 @@ function PollProvider({children}) {
         setLoading(true)
         axios({
             method: 'get',
-            url: 'http://localhost:8080/polls/public',
+            url: 'http://api-pollvote.herokuapp.com/polls/public',
             withCredentials: true,
             })
             .then(response => {

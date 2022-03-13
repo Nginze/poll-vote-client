@@ -30,7 +30,7 @@ function PollForm() {
     }
     axios({
       method: 'post',
-      url: 'http://localhost:8080/polls/public',
+      url: 'http://api-pollvote.herokuapp.com/polls/public',
       withCredentials: true,
       data:poll
       })

@@ -11,7 +11,7 @@ function UserProvider({children}) {
     const getUser = () => {
         axios({
         method: 'get',
-        url: 'http://localhost:8080/user/profile',
+        url: 'http://api-pollvote.herokuapp.com/user/profile',
         withCredentials: true,
         })
         .then(response => {setUser(response.data.user)})

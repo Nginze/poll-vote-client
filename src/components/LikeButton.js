@@ -15,7 +15,7 @@ function LikeButton({comment}) {
       setLiked(true)
       axios({
         method: 'post',
-        url: 'http://localhost:8080/polls/comments/likes/'+id,
+        url: 'http://api-pollvote.herokuapp.com/polls/comments/likes/'+id,
         withCredentials: true,
         data:{commentUser: comment.user, user_id:user._id, id:comment._id}
         })

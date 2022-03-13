@@ -47,7 +47,7 @@ function PollResult() {
     const {id} = useParams()
     const getResult = (id) => {
         setLoading(true)
-          axios.get('http://localhost:8080/polls/public/' + id, {
+          axios.get('http://api-pollvote.herokuapp.com/polls/public/' + id, {
             withCredentials: true
           })
             .then(response => {

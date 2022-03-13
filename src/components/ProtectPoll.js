@@ -12,7 +12,7 @@ function ProtectPoll() {
     const [isLoading, setLoading] = useState(false)
     const checkVoted = () => {
         setLoading(true)
-        axios.get('http://localhost:8080/polls/public/' + id, {
+        axios.get('http://api-pollvote.herokuapp.com/polls/public/' + id, {
             withCredentials: true
           })
             .then(response => {

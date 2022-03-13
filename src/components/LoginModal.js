@@ -11,7 +11,7 @@ export default function () {
   const {isOpen, setIsOpen} = useContext(modalContext)
 
   const googleAuth = () => {
-    window.open('http://localhost:8080/auth/google')
+    window.open('http://api-pollvote.herokuapp.com/auth/google')
   }
 
   return (

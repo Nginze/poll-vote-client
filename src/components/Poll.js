@@ -21,11 +21,11 @@ function Poll() {
     const {id} = useParams()
     const navigate = useNavigate()
     const googleAuth = () => {
-        window.open('http://localhost:8080/auth/google')
+        window.open('http://api-pollvote.herokuapp.com/auth/google')
       }
     const getResult = (id) => {
         setLoading(true)
-        axios.get('http://localhost:8080/polls/public/' + id, {
+        axios.get('http://api-pollvote.herokuapp.com/polls/public/' + id, {
           withCredentials: true
         })
            .then(response => {
@@ -46,7 +46,7 @@ function Poll() {
    const submitVote = () =>{
         axios({
             method:'post',
-            url: 'http://localhost:8080/polls/poll/' + id,
+            url: 'http://api-pollvote.herokuapp.com/polls/poll/' + id,
             withCredentials: true,
             data:{
                 option,

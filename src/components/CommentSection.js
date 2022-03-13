@@ -15,7 +15,7 @@ function CommentSection() {
   const {id} = useParams()
   const [comment, setComment] = useState('')
   const googleAuth = ()=>{
-    window.open('http://localhost:8080/auth/google')
+    window.open('http://api-pollvote.herokuapp.com/auth/google')
   }
   const postComment = () => {
       const commentObject = {
@@ -25,13 +25,13 @@ function CommentSection() {
       }
       axios({
         method: 'post',
-        url: 'http://localhost:8080/polls/comments/'+id,
+        url: 'http://api-pollvote.herokuapp.com/polls/comments/'+id,
         withCredentials: true,
         data:commentObject
         })
   }
   const getResult = () => {
-      axios.get('http://localhost:8080/polls/comments/' + id, {
+      axios.get('http://api-pollvote.herokuapp.com/polls/comments/' + id, {
         withCredentials: true
       })
         .then(response => {

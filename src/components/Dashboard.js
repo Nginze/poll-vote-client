@@ -39,7 +39,7 @@ function Dashboard() {
     setLoading(true)
     axios({
     method: 'get',
-    url: 'http://localhost:8080/user/profile/' + id,
+    url: 'http://api-pollvote.herokuapp.com/user/profile/' + id,
     withCredentials: true,
     })
     .then(response => {
@@ -56,7 +56,7 @@ function Dashboard() {
   const getUserPolls = () =>{
     axios({
       method: 'get',
-      url: 'http://localhost:8080/polls/user/' + id,
+      url: 'http://api-pollvote.herokuapp.com/polls/user/' + id,
       withCredentials: true,
       })
       .then(response => {
@@ -70,7 +70,7 @@ function Dashboard() {
       .catch(err => {console.log(err)})
   }
   const getComments = () => {
-    axios.get('http://localhost:8080/polls/comments/user/' + username, {
+    axios.get('http://api-pollvote.herokuapp.com/polls/comments/user/' + username, {
       withCredentials: true
     })
       .then(response => {
