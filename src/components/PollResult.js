@@ -142,8 +142,8 @@ function PollResult() {
                         <span style={{textAlign:'center'}}>Share</span>
                         <div>
                           <a onClick={()=>{setOpen(true); setOpen2(false)}}><i class="fa-solid fa-link"></i> Share to clipboard</a>
-                          <a href={`https://wa.me/?text=What is your take on this!?-Vote now at http://localhost:3000/poll/${id}`} target='_blank' className='whatsapp-link'>    <i class="fa-brands fa-whatsapp"></i> Share to Whatsapp</a>
-                          <a href = {`http://twitter.com/share?text=What is your take on this!?-Vote now at&url=http://localhost:3000/poll/${id}`} target='_blank' className='twitter-link'><i class="fa-brands fa-twitter"></i> Share to twitter</a>
+                          <a href={`https://wa.me/?text=What is your take on this!?-Vote now at http://localhost:3000/poll/${id}`} target='_blank' rel="noreferrer" className='whatsapp-link'>    <i class="fa-brands fa-whatsapp"></i> Share to Whatsapp</a>
+                          <a href = {`http://twitter.com/share?text=What is your take on this!?-Vote now at&url=http://localhost:3000/poll/${id}`} rel="noreferrer" target='_blank' className='twitter-link'><i class="fa-brands fa-twitter"></i> Share to twitter</a>
                           <a onClick={()=>{setOpen3(true);setOpen2(false)}} id="QR-thankyou"><i class="fa-solid fa-qrcode"></i> Share QR code</a>
                         </div>
                     </div>
@@ -215,8 +215,8 @@ function PollResult() {
                         <span>Share</span>
                         <div>
                           <a onClick={()=>{setOpen(true)}}><i class="fa-solid fa-link"></i> Share to clipboard</a>
-                          <a href={`https://wa.me/?text=What is your take on this!?-Vote now at http://localhost:3000/poll/${id}`} target='_blank' className='whatsapp-link'>    <i class="fa-brands fa-whatsapp"></i> Share to Whatsapp</a>
-                          <a href = {`http://twitter.com/share?text=What is your take on this!?-Vote now at&url=http://localhost:3000/poll/${id}`} target='_blank' className='twitter-link'><i class="fa-brands fa-twitter"></i> Share to twitter</a>
+                          <a href={`https://wa.me/?text=What is your take on this!?-Vote now at http://localhost:3000/poll/${id}`} target='_blank' rel="noreferrer" className='whatsapp-link'>    <i class="fa-brands fa-whatsapp"></i> Share to Whatsapp</a>
+                          <a href = {`http://twitter.com/share?text=What is your take on this!?-Vote now at&url=http://localhost:3000/poll/${id}`} target='_blank' rel="noreferrer" className='twitter-link'><i class="fa-brands fa-twitter"></i> Share to twitter</a>
                           <a onClick={()=>{setOpen3(true)}} id='QR-code'><i class="fa-solid fa-qrcode"></i> Share QR code</a>
                         </div>
                     </div>
