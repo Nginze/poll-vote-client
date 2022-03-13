@@ -1,0 +1,96 @@
+.home-wrapper{
+    display: flex;
+    padding: 6vw;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header{
+    font-size: 6ch;
+    margin: 0;
+}
+
+.poll-link{
+    background-color: #49d97f;
+    padding: 1.4rem 1.7rem  ;
+    margin: 2rem;
+    border-radius: 5px;
+    color: white;
+    width: 10rem;
+    font-size: 2.5ch;
+    font-weight: 600;
+    transition: all 1s ;
+}
+.poll-link:hover{
+    background-color: #40bd70;
+}
+
+.integrations-icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.integration-icon{
+    margin: 2rem;
+}
+
+.integrations-header{
+    margin: 0.5rem 0rem;
+    font-size: 2.5ch;
+}
+
+.fa-slack{
+    font-size: 45px;
+    color: rgb(160, 160, 160);
+}
+
+.fa-telegram{
+    font-size: 45px;
+    color: rgb(160, 160, 160);
+}
+
+.fa-facebook-square{
+    font-size: 45px;
+    color: rgb(160, 160, 160);
+}
+
+.fa-whatsapp-square{
+    font-size: 45px;
+    color: rgb(160, 160, 160);
+}
+
+.fa-linkedin{
+    font-size: 45px;
+    color: rgb(160, 160, 160);
+}
+
+.typed-text{
+    color: rgb(255, 196, 118);
+}
+
+.header-span{
+    color: #49d97f;
+}
+
+@media (max-width:700px){
+    .header{
+       
+        width: 100vw;
+        font-size: 4ch;
+      
+    }
+    .header-container{
+        margin-top: 4rem
+    }
+    .poll-link{
+        width: 8rem;
+        font-size: 1.9ch;
+    }
+    .integration-icon{
+        margin: 2rem;
+    }
+   
+   
+}
